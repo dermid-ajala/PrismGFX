@@ -1,4 +1,5 @@
-PrismFX with the additional block (printGFX).
-printGFX will display a string of Thai, Ascii, or mixed Thai and Ascii characters.
-printGFX can be configured to print using a user selectab;e font for each language, Thai and/or English.
-printGFX uses Adafruit GFX font files.
+PrismFX with the additional block (PrintGFX).
+PrintGFX will display a string of Thai, Ascii, or mixed Thai and Ascii characters.
+PrintGFX can be configured to print using a user selectable font for each language, Thai and/or English.
+PrintGFX uses Adafruit GFX font files.
+See the readme file inthe includes folder
