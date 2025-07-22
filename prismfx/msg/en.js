@@ -1,4 +1,6 @@
-Blockly.Msg.PRISMFX_TITLE = "PrismFX";
+Blockly.Msg.PRISMFX_TITLE 		= "PrismFX";
+Blockly.Msg.PRISMFX_ADDRESS 		= "Address";
+
 Blockly.Msg.PRISMFX_Fill            = "Fill";
 Blockly.Msg.PRISMFX_Outline         = "Outline";
 Blockly.Msg.PRISMFX_Rotation        = "Orientation";

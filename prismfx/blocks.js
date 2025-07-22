@@ -1,23 +1,16 @@
 function prismfx_init(_this) {
-	_this.appendDummyInput()
-		.appendField(Blockly.Msg.PRISMFX_TITLE);
-
-	// device addess 0x20 to 0x23 for channel 0, addess 0x20 to 0x27 for channel 1 to 64
-	_this.appendDummyInput()
-		.appendField(Blockly.Msg.ADDRESS)
-		.appendField(new Blockly.FieldDropdown(function() {
-			try {
-				if ((typeof(this.sourceBlock_) != "undefined") && (typeof(this.sourceBlock_.inputList) != "undefined")) {
-					var inputlist = this.sourceBlock_.inputList;
-					var selected_channel = parseInt(inputlist[1].fieldRow[1].value_);
-					return Blockly.mcp23s17_address_dropdown_menu(selected_channel);
-				}
-			} catch (e) {
-
-			}
-			// default
-			return Blockly.mcp23s17_address_dropdown_menu(0);
-		}), 'ADDRESS');
+	_this.appendDummyInput().appendField(Blockly.Msg.PRISMFX_TITLE);
+	_this.appendDummyInput().appendField(Blockly.Msg.PRISMFX_ADDRESS)
+		.appendField(new Blockly.FieldDropdown([
+			["0x20", "32"],
+			["0x21", "33"],
+			["0x22", "34"],
+			["0x23", "35"],
+			["0x24", "36"],
+			["0x25", "37"],
+			["0x26", "38"],
+			["0x27", "39"]
+		]), "ADDRESS");
 }
 
 Blockly.Blocks["prismfx.clear"] = {
